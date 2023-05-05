@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    background: var(--VeryDarkBlue);
+}
+.scope{
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 5px 10px 15px 20px rgba(0,0,0,0.25);
+    background: var(--DarkBlue);
+    border-radius: 30px;
+}
+.nbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 350px;
+}
+.Middle{
+    display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   
+}
+.Middle .ims{
+    width: 40px;
+    background: var(--VeryDarkBlue);
+    height: 40px;    
+    padding: 10px;
+    border-radius: 50%;
+}
+.image{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    
+}
+.title{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    gap: 15px;
+    
+}
+.title h3{
+    color: #fff;
+}
+.title p{
+    color: var(--LightGrey);
+}
+button{
+    color: #fff;
+    background: var(--Orange);
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    width: 300px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background: #fff;
+    color: var(--Orange);
+
+}
+.number span{
+    background-color: var(--VeryDarkBlue);
+    color: var(--MediumGrey);
+    padding: 12px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.number span:hover{
+    background: var(--Orange);
+    color: #fff;
+    cursor: pointer;
+}
+.thankyou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+}
+.check{
+    background-color: var(--VeryDarkBlue);
+    width: fit-content;
+    margin: 1rem auto;
+    color: var(--Orange);
+    font-size: 14px;
+    padding: 0.7rem;
+    border-radius: 2rem;
+}
+.titlep{
+    color: white;
+    text-transform: uppercase;
+}
+.desp{
+    color: var(--MediumGrey);
+    text-align: center;
+}
+.hidden {
+    display: none;
+  }
+  .checked {
+    background-color: var(--Orange) !important;
+    color: var(--White) !important;
+  }
